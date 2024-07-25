@@ -3,6 +3,11 @@ package DataStructure.LinkedList;
 public class Node {
     int data;
     Node next = null;
+
+    public Node() {}
+    public Node(int data) {
+        this.data = data;
+    }
 }
 
 // 헤더가 없는 LinkedList 구현한 코드
