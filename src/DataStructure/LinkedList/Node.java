@@ -8,6 +8,36 @@ public class Node {
     public Node(int data) {
         this.data = data;
     }
+
+    public Node addNext(int data) {
+        Node head = this;
+        Node next = new Node(data);
+        head.next = next;
+        return next;
+    }
+
+    public Node addNext(Node node) {
+        Node head = this;
+        head.next = node;
+        return node;
+    }
+
+    public Node get(int length) {
+        Node current = this;
+        for(int i = 0; i < length; i++) {
+            current = current.next;
+        }
+        return current;
+    }
+
+    public void print() {
+        Node current = this;
+        while(current.next != null) {
+            System.out.print(current.data + " -> ");
+            current = current.next;
+        }
+        System.out.println(current.data);
+    }
 }
 
 // 헤더가 없는 LinkedList 구현한 코드
