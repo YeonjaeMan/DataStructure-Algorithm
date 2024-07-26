@@ -1,3 +1,7 @@
+## 7/26 금
+- LinkedList 교차점 찾기
+- LinkedList 루프 찾기
+
 ## 7/25 목
 - LinkedList Digit 합산 알고리즘
   - SumLists1 : 재귀 호출 사용
