@@ -1,6 +1,8 @@
 ## 7/26 금
 - LinkedList 교차점 찾기
+  - GetIntersection
 - LinkedList 루프 찾기
+  - FindLoop
 
 ## 7/25 목
 - LinkedList Digit 합산 알고리즘
