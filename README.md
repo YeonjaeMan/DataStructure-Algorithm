@@ -1,3 +1,7 @@
+## 7/28 일
+- Stack 구현 (push, pop, peek, isEmpty)
+- Queue 구현 (add, remove, peek, isEmpty)
+
 ## 7/26 금
 - LinkedList 교차점 찾기
   - GetIntersection
