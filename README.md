@@ -1,3 +1,9 @@
+## 7/29 월
+- 고정 길이 스택 구현
+  - FixedMultiStacks
+- 유동 길이 스택 구현
+  - MultiStacks
+
 ## 7/28 일
 - Stack 구현 (push, pop, peek, isEmpty)
 - Queue 구현 (add, remove, peek, isEmpty)

@@ -1,4 +1,6 @@
-package DataStructure.StackAndQueue;
+package DataStructure.StackAndQueue.Queue;
+
+import DataStructure.StackAndQueue.Node;
 
 import java.util.NoSuchElementException;
 
