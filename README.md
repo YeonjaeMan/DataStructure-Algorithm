@@ -3,6 +3,9 @@
   - FixedMultiStacks
 - 유동 길이 스택 구현
   - MultiStacks
+- Stack의 작은값 찾기
+  - StackWithMin : 스택에 작은값 같이 저장
+  - StackWithMin2 : 또 다른 스택에 작은값 저장
 
 ## 7/28 일
 - Stack 구현 (push, pop, peek, isEmpty)
