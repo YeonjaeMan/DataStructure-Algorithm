@@ -1,3 +1,14 @@
+## 7/30 화
+- ArrayList를 사용한 멀티 스택
+  - SetOfStack : 내부적으로는 스택이 나뉘어있지만, 겉으로는 확인할 수 없음
+  - SetOfStack2 : popAt(), shiftLeft() 추가
+- 두개의 Stack으로 Queue 만들기
+  - MyQueue
+- Stack 정렬하기
+  - SortStack
+- LinkedList로 Queue 구현하기
+  - AnimalShelter
+
 ## 7/29 월
 - 고정 길이 스택 구현
   - FixedMultiStacks
