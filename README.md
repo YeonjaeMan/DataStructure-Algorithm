@@ -1,3 +1,13 @@
+## 7/31 수
+- Tree, Heap, Trie 정리
+  - Tree.md
+- Binary Tree의 3가지 순회방법 구현 (inorder, preorder, postorder)
+  - Tree
+- Graph 정리
+  - Graph.md
+- BFS, DFS 구현
+  - Graph
+
 ## 7/30 화
 - ArrayList를 사용한 멀티 스택
   - SetOfStack : 내부적으로는 스택이 나뉘어있지만, 겉으로는 확인할 수 없음
