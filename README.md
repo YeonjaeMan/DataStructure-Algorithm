@@ -1,3 +1,11 @@
+## 8/1 목
+- Graph에서 두지점의 경로찾기
+  - SearchGraph
+- 배열을 이진검색트리로 만들기
+  - BinaryTree
+- 이진트리를 레벨단위 리스트로 변형하기
+  - BSTtoList
+
 ## 7/31 수
 - Tree, Heap, Trie 정리
   - Tree.md
