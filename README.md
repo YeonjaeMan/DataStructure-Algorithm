@@ -1,3 +1,7 @@
+## 8/2 금
+- Tree의 Balance 확인하기
+  - BalanceCheckTree
+
 ## 8/1 목
 - Graph에서 두지점의 경로찾기
   - SearchGraph
