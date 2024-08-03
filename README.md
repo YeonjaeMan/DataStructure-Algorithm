@@ -1,3 +1,9 @@
+## 8/3 토
+- 주어진 트리가 이진검색트리인지 확인하기
+  - CheckBST : inorder 변형, 배열 공간 없는 방법, 최소값/최대값 범위 지정
+- 이진검색트리에서 다음노드 찾기(inorder 사용)
+  - FindNextNode
+
 ## 8/2 금
 - Tree의 Balance 확인하기
   - BalanceCheckTree
