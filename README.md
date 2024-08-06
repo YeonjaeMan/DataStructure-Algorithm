@@ -1,3 +1,7 @@
+## 8/6 화
+- Tree에서 두노드의 첫번째 공통부모 찾기
+  - FindCommonParent
+
 ## 8/4 일
 - Graph에 명시된 관계에 따라 데이터 뽑아오기
   - Project
