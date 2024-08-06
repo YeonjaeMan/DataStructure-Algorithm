@@ -17,5 +17,14 @@ public class Test {
 
         Node fa2 = t.commonAncestor2(6, 9); // = 7
         System.out.println("The first common ancestor is " + fa2.data);
+
+        Node fa3 = t.commonAncestor3(5, 8); // = 7
+        System.out.println("The first common ancestor is " + fa3.data);
+
+        Node fa4 = t.commonAncestor4(2, 8); // = 4
+        System.out.println("The first common ancestor is " + fa4.data);
+
+        Node fa5 = t.commonAncestor5(0, 3); // = 1
+        System.out.println("The first common ancestor is " + fa5.data);
     }
 }

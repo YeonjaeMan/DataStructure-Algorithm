@@ -101,4 +101,94 @@ public class Tree {
         Node parent = node.parent;
         return parent.left == node ? parent.right : parent.left;
     }
+
+    // 방법 3. Node에 parent 멤버 변수가 없다면, root부터 시작해서 왼쪽과 오른쪽 서브트리에 있는지를 확인한다.
+    public Node commonAncestor3(int d1, int d2) {
+        Node p = getNode(d1);
+        Node q = getNode(d2);
+        if(!covers(root, p) || !covers(root, q)) {
+            return null;
+        }
+        return ancestorHelper(root, p , q); // 재귀 호출
+    }
+
+    public Node ancestorHelper(Node root, Node p, Node q) {
+        if(root == null || root == p || root == q) {
+            return root;
+        }
+        boolean pIsOnLeft = covers(root.left, p);
+        boolean qIsOnLeft = covers(root.left, q);
+        if(pIsOnLeft != qIsOnLeft) {
+            return root;
+        }
+        Node childSide = pIsOnLeft? root.left : root.right;
+        return ancestorHelper(childSide, p, q);
+    }
+
+    // 방법 4. postorder를 이용한 공통 부모 찾기
+    public Node commonAncestor4(int d1, int d2) {
+        Node p = getNode(d1);
+        Node q = getNode(d2);
+        return commonAncestor4(root, p, q);
+    }
+
+    public Node commonAncestor4(Node root, Node p, Node q) {
+        if(root == null) {
+            return null;
+        }
+        if(root == p && root == q) {
+            return root;
+        }
+        Node x = commonAncestor4(root.left, p, q);
+        if(x != null && x != p && x != q) {
+            return x;
+        }
+        Node y = commonAncestor4(root.right, p, q);
+        if(y != null && y != p && y != q) {
+            return y;
+        }
+        if(x != null && y != null) {
+            return root;
+        } else if(root == p || root == q) {
+            return root;
+        } else {
+            return x == null ? y : x;
+        }
+    }
+
+    // 방법 5. postorder 방식에 찾은 결과를 저장할 객체를 반환하는 방법
+    public Node commonAncestor5(int d1, int d2) {
+        Node p = getNode(d1);
+        Node q = getNode(d2);
+        Result r = commonAncestor5(root, p, q);
+        if(r.isAncestor) {
+            return r.node;
+        }
+        return null;
+    }
+
+    public Result commonAncestor5(Node root, Node p, Node q) {
+        if(root == null) {
+            return new Result(null, false);
+        }
+        if(root == p && root == q) {
+            return new Result(root, true);
+        }
+        Result rx = commonAncestor5(root.left, p, q);
+        if(rx.isAncestor) {
+            return rx;
+        }
+        Result ry = commonAncestor5(root.right, p, q);
+        if(ry.isAncestor) {
+            return ry;
+        }
+        if(rx.node != null && ry.node != null) {
+            return new Result(root, true);
+        } else if(root == p || root == q) {
+            boolean isAncestor = rx.node != null || ry.node != null;
+            return new Result(root, isAncestor);
+        } else {
+            return new Result(rx.node != null ? rx.node : ry.node, false);
+        }
+    }
 }
