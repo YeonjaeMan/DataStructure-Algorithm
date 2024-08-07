@@ -1,3 +1,11 @@
+## 8/7 수
+- 이진검색트리를 만드는 모든 배열 찾기
+  - AllSequences
+- 서브트리인지 확인하기
+  - CheckSubTree
+- 이진트리에서 랜덤노드가져오기
+  - GetIthNode
+
 ## 8/6 화
 - Tree에서 두노드의 첫번째 공통부모 찾기
   - FindCommonParent
