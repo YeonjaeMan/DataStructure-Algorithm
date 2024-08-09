@@ -1,3 +1,9 @@
+## 8/9 금
+- 순회결과로 원본트리 재현하기
+  - BuildTree
+- BST insertion/deletion
+  - BinarySearchTree
+
 ## 8/8 목
 - 트리에서 주어진 값을 합산으로 가지는 경로의 개수 찾기
   - CountPath
