@@ -1,3 +1,11 @@
+## 8/10 토
+- 해쉬테이블(Hash Table)에 대해 알아보고 구현하기
+  - HashTable
+- 자바의 ArrayList에 대해 알아보고 구현하기
+  - ArrayList
+- 자바의 StringBuilder에 대해 알아보고 구현하기
+  - StringBuilder
+
 ## 8/9 금
 - 순회결과로 원본트리 재현하기
   - BuildTree
