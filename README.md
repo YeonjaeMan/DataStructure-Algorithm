@@ -1,3 +1,11 @@
+## 8/11 일
+- 문자열 안의 문자들이 고유한지 확인하기
+  - UniqueString
+- 두개의 문자열이 서로 치환(Permutation)인지 알아내기
+  - Permutation
+- 문자열안의 공백을 URL엔코딩하기
+  - Encoding
+
 ## 8/10 토
 - 해쉬테이블(Hash Table)에 대해 알아보고 구현하기
   - HashTable
