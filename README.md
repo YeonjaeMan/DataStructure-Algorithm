@@ -1,3 +1,7 @@
+## 8/12 월
+- 문자열이 회문(palindrome)의 치환(permutation)인지 확인하기
+  - PermutationOfPalindrome
+
 ## 8/11 일
 - 문자열 안의 문자들이 고유한지 확인하기
   - UniqueString
