@@ -2,12 +2,16 @@ package DataStructure.ArrayAndString.PermutationOfPalindrome;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(isPermutationOfPalindrome("aa bb cc dd"));
-        System.out.println(isPermutationOfPalindrome("aa bb cc dd e"));
-        System.out.println(isPermutationOfPalindrome("aa bb cc dd e fff"));
+        System.out.println(isPermutationOfPalindrome1("aa bb cc dd"));
+        System.out.println(isPermutationOfPalindrome1("aa bb cc dd e"));
+        System.out.println(isPermutationOfPalindrome1("aa bb cc dd e fff"));
+
+        System.out.println(isPermutationOfPalindrome2("aa bb cc dd"));
+        System.out.println(isPermutationOfPalindrome2("aa bb cc dd e"));
+        System.out.println(isPermutationOfPalindrome2("aa bb cc dd e fff"));
     }
 
-    private static boolean isPermutationOfPalindrome(String s) {
+    private static boolean isPermutationOfPalindrome1(String s) {
         int[] table = buildCharFrequencyTable(s);
         return checkMaxOneOdd(table);
     }
@@ -45,5 +49,22 @@ public class Test {
             }
         }
         return true;
+    }
+
+    private static boolean isPermutationOfPalindrome2(String s) {
+        int countOdd = 0;
+        int[] table = new int[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
+        for(char c : s.toCharArray()) {
+            int x = getCharNumber(c);
+            if(x != 1) {
+                table[x]++;
+                if(table[x] % 2 == 1) {
+                    countOdd++;
+                } else {
+                    countOdd--;
+                }
+            }
+        }
+        return countOdd <= 1;
     }
 }
