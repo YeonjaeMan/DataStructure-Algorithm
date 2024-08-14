@@ -9,6 +9,10 @@ public class Test {
         System.out.println(isPermutationOfPalindrome2("aa bb cc dd"));
         System.out.println(isPermutationOfPalindrome2("aa bb cc dd e"));
         System.out.println(isPermutationOfPalindrome2("aa bb cc dd e fff"));
+
+        System.out.println(isPermutationOfPalindrome3("aa bb cc dd"));
+        System.out.println(isPermutationOfPalindrome3("aa bb cc dd e"));
+        System.out.println(isPermutationOfPalindrome3("aa bb cc dd e fff"));
     }
 
     private static boolean isPermutationOfPalindrome1(String s) {
@@ -56,7 +60,7 @@ public class Test {
         int[] table = new int[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
         for(char c : s.toCharArray()) {
             int x = getCharNumber(c);
-            if(x != 1) {
+            if(x != -1) {
                 table[x]++;
                 if(table[x] % 2 == 1) {
                     countOdd++;
@@ -66,5 +70,35 @@ public class Test {
             }
         }
         return countOdd <= 1;
+    }
+
+    private static boolean isPermutationOfPalindrome3(String s) {
+        int bitVector = createBitVector(s);
+        return bitVector == 0 || checkExactlyOneBitSet(bitVector);
+    }
+
+    private static int createBitVector(String s) {
+        int bitVector = 0;
+        for(char c : s.toCharArray()) {
+            int x = getCharNumber(c);
+            bitVector = toggle(bitVector, x);
+        }
+        return bitVector;
+    }
+
+    private static int toggle(int bitVector, int index) {
+        if(index < 0)
+            return bitVector;
+        int mask = 1 << index;
+        if((bitVector & mask) == 0) {
+            bitVector |= mask;
+        } else {
+            bitVector &= ~mask;
+        }
+        return bitVector;
+    }
+
+    private static boolean checkExactlyOneBitSet(int bitVector) {
+        return (bitVector & (bitVector - 1)) == 0;
     }
 }
