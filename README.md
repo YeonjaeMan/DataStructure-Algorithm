@@ -1,3 +1,11 @@
+## 8/16 금
+- 단한번만 편집된 문자열인지 알아내기
+  - CheckOneEdit
+- 문자열 압축(Compression)하기
+  - CompressString
+- 이미지 회전 알고리즘 - Rotate Matrix
+  - RotateMatrix
+
 ## 8/12 월
 - 문자열이 회문(palindrome)의 치환(permutation)인지 확인하기
   - PermutationOfPalindrome
