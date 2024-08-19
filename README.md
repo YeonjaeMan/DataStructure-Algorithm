@@ -1,3 +1,13 @@
+# 8/19 월
+- 선택정렬(Selection Sort) 자바로 구현하기
+  - SelectionSort
+- 버블정렬(Bubble Sort) 자바로 구현하기
+  - BubbleSort
+- 병합정렬(Merge Sort) 자바로 구현하기
+  - MergeSort
+- 퀵정렬(Quick Sort)에 대해 알아보고 자바로 구현하기
+  - QuickSort
+
 ## 8/18 일
 - 빅오(Big-O)표기법 완전정복
   - BigO.md
