@@ -1,3 +1,7 @@
+# 8/20 화
+- 최소비용으로 계단오르기
+  - MinCostClimbingStairs
+
 # 8/19 월
 - 선택정렬(Selection Sort) 자바로 구현하기
   - SelectionSort
