@@ -1,3 +1,7 @@
+# 8/21 수
+- Robot in a Grid (그리드 안의 로봇을 목표지점까지 도달하는 경로 출력하기)
+  - RobotInGrid
+
 # 8/20 화
 - 최소비용으로 계단오르기
   - MinCostClimbingStairs
