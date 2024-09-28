@@ -17,7 +17,7 @@ public class 도둑질 {
         dpX[0] = 0; // 첫번째 집 방문 X
         dpX[1] = money[1]; // 두번째 집 방문 O
 
-        for(int i = 2; i < money.length; i++) {
+        for (int i = 2; i < money.length; i++) {
             dpO[i] = Math.max(money[i] + dpO[i - 2], dpO[i - 1]); // 첫번째 집을 방문한 경우, 현재 집과 이전 집을 비교
             dpX[i] = Math.max(money[i] + dpX[i - 2], dpX[i - 1]); // 첫번째 집을 방문하지 않은 경우, 현재 집과 이전 집을 비교
         }
